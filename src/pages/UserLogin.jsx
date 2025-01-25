@@ -6,7 +6,8 @@ const UserLogin = ()=>{
 	const [password,setPassword] = useState('');
 	const submitHandler = (e)=>{
 		e.preventDefault();
-		console.log(email,password);
+		setUserData({email,password});
+		console.log(userData);
 		setEmail("");
 		setPassword("");
 	}
@@ -47,7 +48,7 @@ const UserLogin = ()=>{
 			<p className="text-center">New here?</p><Link className="text-blue-600" to="/users-register">Create new Account</Link>
 			</div>
 			<div>
-				<Link className="bg-lime-600 flex items-center justify-center text-white font-semibold mb-7 rounded px-4 py-2 border w-full text-lg placeholder:text-base" to="/captain-register">Sign in as Captain</Link>
+				<Link className="bg-lime-600 flex items-center justify-center text-white font-semibold mb-7 rounded px-4 py-2 border w-full text-lg placeholder:text-base" to="/captain-login">Sign in as Captain</Link>
 			</div>
 
 		</div>
