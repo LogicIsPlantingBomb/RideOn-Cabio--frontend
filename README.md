@@ -90,13 +90,25 @@ The landing page displaying the logo and a button to get started.
 A form for users to log in, featuring fields for email and password. Includes a link for new users to create an account and an option to sign in as a captain.
 
 ### UserSignup.jsx
-A form for new users to register, collecting essential information.
+A form for new users to register, collecting essential information:
+- First Name
+- Last Name
+- Email
+- Password
+
+Implements two-way data binding using React hooks (`useState`) and a form submit handler to gather and log user data.
 
 ### CaptainLogin.jsx
 A form for captains to log in.
 
 ### CaptainSignup.jsx
-A form for new captains to register.
+A form for new captains to register, collecting essential information:
+- First Name
+- Last Name
+- Email
+- Password
+
+Uses controlled components for input fields, with real-time state updates and a submit handler for data processing.
 
 ---
 
@@ -139,3 +151,4 @@ For any inquiries, please reach out to the project maintainer.
 ---
 
 Happy Coding!! 🚀
+
